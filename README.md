@@ -137,7 +137,7 @@ Nothing you write is sent anywhere to do this. Where Apple Intelligence is off, 
 - **Two themes**: High Clarity (light) and Espresso (dark), or follow your Mac.
 - **Import** a folder of Markdown notes; **export** your notes, a Board as Markdown, or everything as JSON.
 - **Shortcuts and Siri** can open a Project or summarise one.
-- **AI tools on your Mac** (anything that speaks MCP) can work with your Projects through a local connection. It only listens on your own Mac, needs a pairing token from Settings, and asks before it changes anything.
+- **AI tools on your Mac** (anything that speaks MCP, such as Claude Code, Claude Desktop or Cursor) can work with your Projects through a local connection. Turn it on in **Settings > AI agents** and copy the set-up for your tool. It only listens on your own Mac, needs a pairing token, asks you before anything is deleted, and every change it makes can be undone.
 
 ## Keyboard shortcuts
 
