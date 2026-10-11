@@ -29,6 +29,7 @@ Mono (The Mono System) brings Boards, Notes and Habits together in one quiet app
   - [Rhythm, for habits](#rhythm-for-habits)
   - [Written on your Mac](#written-on-your-mac)
   - [Everything else](#everything-else)
+  - [Connecting an AI tool](#connecting-an-ai-tool)
 - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Your data and privacy](#your-data-and-privacy)
 - [Updating](#updating)
@@ -48,6 +49,15 @@ Mono (The Mono System) brings Boards, Notes and Habits together in one quiet app
    - choose **Open Anyway**, then confirm.
 
 You only do this once. After that, Mono opens like any other app.
+
+> [!IMPORTANT]
+> **On a work Mac** managed by your company, Open Anyway may be missing or greyed out, because only notarised apps are allowed. Ask your IT team, or use a personal Mac for the beta.
+
+### First run
+
+- **Choose a Notes Folder** in **Settings > Notes Folder**, and every Note becomes a Markdown file there.
+- **Bring notes in** with **Settings > Import**, or by dragging a folder of Markdown files onto the window. You see what it holds before anything is written, and importing it again makes no copies.
+- **Start a Project** from Flow with **New Project**. It comes with a Board and an Overview.
 
 ## A tour
 
@@ -137,7 +147,18 @@ Nothing you write is sent anywhere to do this. Where Apple Intelligence is off, 
 - **Two themes**: High Clarity (light) and Espresso (dark), or follow your Mac.
 - **Import** a folder of Markdown notes; **export** your notes, a Board as Markdown, or everything as JSON.
 - **Shortcuts and Siri** can open a Project or summarise one.
-- **AI tools on your Mac** (anything that speaks MCP, such as Claude Code, Claude Desktop or Cursor) can work with your Projects through a local connection. Turn it on in **Settings > AI agents** and copy the set-up for your tool. It only listens on your own Mac, needs a pairing token, asks you before anything is deleted, and every change it makes can be undone.
+- **AI tools on your Mac** (anything that speaks MCP, such as Claude Code, Claude Desktop or Cursor) can work with your Projects through a local connection. See [Connecting an AI tool](#connecting-an-ai-tool).
+
+### Connecting an AI tool
+
+1. Open **Settings > AI agents** and turn on **Local MCP**.
+2. Tap the row for your tool to copy its set-up:
+   - **Claude Code:** paste the `claude mcp add …` command into a terminal.
+   - **Cursor:** paste the block into `~/.cursor/mcp.json`.
+   - **Claude Desktop:** paste the block into `~/Library/Application Support/Claude/claude_desktop_config.json`. It needs [Node](https://nodejs.org).
+3. Restart the tool.
+
+The connection only listens on your own Mac and needs the pairing token. The tool asks you in Mono before it deletes anything, and every change it makes can be undone from **Settings > Agent activity**.
 
 ## Keyboard shortcuts
 
